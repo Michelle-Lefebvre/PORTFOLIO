@@ -4,13 +4,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
-
-svg {
-    font-family: 'Helvetica Neue', sans-serif;
-    font-weight: 900;
-    text-shadow: 2px 5px whitesmoke;
-}
 svg>#navTitle {
     font-family: 'Helvetica Neue', sans-serif;
     font-weight: 500;  
@@ -31,12 +24,12 @@ img>.head {
 .head-light {
     letter-spacing: 3px;
     font-weight: 600;
-    color: darkgrey;
+    color: #838383;
 }
 
 .header-light {
     font-weight: 500;
-    color: darkgrey;
+    color: #838383;
     letter-spacing: normal;
 }
 ul {

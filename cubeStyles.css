@@ -1,0 +1,127 @@
+form {
+    width: 400px;
+    margin: 50px auto;
+}
+
+
+/* perspevtive element to do 3D */
+#container {
+    width: 300px;
+    height: 300px;
+    margin: 100px auto;
+    perspective: 1100px;
+    perspective-origin: -50px -50px;
+    float: left;
+}
+
+.cube {
+    transform-style: preserve-3d;
+    position: relative;
+    left: 15%;
+    margin: 0;
+    transition: 1S;
+    transform: translateZ(-150px);
+    width: 300px;
+    height: 300px;
+}
+
+/* img.img3d {
+    width: 300px;
+    height:300px;
+    width: fit-content;
+} */
+.cube div {
+    width: 300px;
+    height:inherit;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    position: absolute;
+    border: 1px solid white;
+    text-align: center;
+    /* padding-top: 110px; */
+    font: 3em 'Times New Roman', Times, Serif;
+}
+
+.cube div.front {
+    transform: translateZ(150px);
+}
+
+.cube div.left {
+    transform: rotateY(-90deg) translateZ(150px);
+    background-color: rgba(0, 255, 0, 0.6);
+}
+
+.cube div.right {
+    transform: rotateY(90deg) translateZ(150px);
+    background-color: rgba(0, 0, 255, 0.6);
+}
+
+.cube div.top3d {
+    transform: rotateX(90deg) translateX(0px) translateZ(150px);    
+    background-color: rgba(255, 255, 0, 0.6);
+}
+
+.cube div.bottom {
+    transform: rotateX(-90deg) translateZ(150px);
+    background-color: rgba(0, 255, 255, 0.6);
+}
+
+.cube div.back {
+    transform: rotateY(180deg) translateZ(150px);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* styling for labels */
+label {
+    cursor: pointer;
+    background-color: gray;
+    margin-left: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    float: left;
+    text-align: center;
+}
+
+input[type="radio"] {
+    position: absolute;
+    left: -9999px;
+}
+
+label:hover {
+    background-color: black;
+    color: white;
+}
+
+input:checked+label {
+    color: gold;
+    font-weight: bold;
+}
+
+input[value="front"]:checked {
+    transform: translateZ(-150px) rotateY(0);
+}
+
+input[value="left"]:checked~#container .cube {
+    transform: translateZ(-150px) rotateY(90deg);
+}
+
+input[value="right"]:checked~#container .cube {
+    transform: translateZ(-150px) rotateY(-90deg);
+}
+
+input[value="top3d"]:checked~#container .cube {
+    transform: translateZ(-150px) rotateX(-90deg);
+}
+
+input[value="bottom"]:checked~#container .cube {
+    transform: translateZ(-150px) rotateX(90deg);
+}
+
+input[value="back"]:checked~#container .cube {
+    transform: translateZ(-150px) rotateY(180deg);
+}
+/* 
+img {
+    width: 100%;
+    margin: auto;
+} */
