@@ -16,7 +16,7 @@ img>.head {
     border-radius: 50%;
     opacity: 70%;
 }
-.titles {
+.titles, .titlesMT {
     color: white;
     font-size: 12rem;
     font-weight: 900;
@@ -24,7 +24,7 @@ img>.head {
     text-shadow: 7px 10px 20px rgb(189, 188, 188);
 }
 @media screen and (max-width: 600px) {
-    .titles {
+    .titles, .titlesMT {
         font-size: 6rem;
         margin-top: 5rem;
     }
@@ -35,6 +35,9 @@ img>.head {
     margin-top: 21rem;
     margin-right: 0;
     text-shadow: 7px 8px 18px rgb(108, 107, 107);
+}
+.titlesMT {
+    margin-top: 20rem;
 }
 .large {
     font-weight: 900;
