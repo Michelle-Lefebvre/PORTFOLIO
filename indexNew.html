@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="images/MMLlogo.png" type="image/x-icon">
+    <title>MML</title>
+
+    <!-- Bootstrap CSS  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Custom CSS  -->
+    <link rel="stylesheet" href="cubeStyles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="fixed-top">
+        <a class="navbar-brand mt-2 ml-3" href="#top">
+            <img src="images/MMLlogo.png" alt="MML logo" width="50">
+            <img src="images/navTitle.png" alt="MICHELLE M LEFEBVRE Front End Developer" width="150">
+        </a>
+        <div id="menu-bar">
+            <div id="menu" onclick="onClickMenu()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <ul class="nav" id="nav">
+                <li><a href="#top">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="menu-bg" id="menu-bg"></div>
+    </nav>
+    <!-- home -->
+    <section id="top">
+        <div class="container center">
+            <div class="row w-100 mt-0 pb-0">
+                <div class="col-sm-8">
+                    <h1 class="titles ml-3 w-100">design</h1>
+                    <h6 class="text-reset text-left head-light mt-3 ml-3 pb-0">MICHELLE M LEFEBVRE</h6>
+                    <h1 class="large ml-3">Front End Developer</h1>
+                    <p class="header-light ml-3">Currently looking for an amazing TEAM to join.</p>
+                    <img src="images/shape.png" alt="pink rectangle" class="ml-3 mt-0 mb-0 pb-0 d-none d-sm-block"
+                        width="5%" style="margin: 100% 0 100%;">
+                </div>
+                <div class="col-sm-4">
+                    <img src="images/shape.png" alt="pink rectangle" class="mt-5 mr-3 d-none d-sm-block" width="10%"
+                        style="margin: 100% 100% 0;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cube of Portfolio-->
+    <div id="portfolio" class="container center">
+        <div class="row w-100">
+            <div class="col-sm-12 mt-3">
+                <h1 class="titles text-right w-100">portfolio</h1>
+            </div>
+        </div>
+
+        <div class="row w-100 mt-0 pb-0">
+            <div class="col-sm-12 col-md-6 center">
+                <form id="animated-3d" class="animated-3d w-100 center text-center" action="#">
+                    <label for="front" class="btn btn-outline-danger center" data-toggle="collapse" role="button"
+                        aria-expanded="false" aria-controls="#jitters" href="#jitters">Jitters</label>
+                    <input type="radio" id="front" name="transform" value="front" />
+
+                    <label for="left" class="btn btn-outline-danger center" data-toggle="collapse" role="button"
+                        aria-expanded="false" aria-controls="collapseExample" href="#madScience">Mad Science</label>
+                    <input type="radio" id="left" name="transform" value="left" />
+
+                    <input type="radio" id="bottom" name="transform" value="bottom" />
+                    <label for="bottom" class="btn btn-outline-danger center">Bottom</label>
+
+                    <input type="radio" id="back" name="transform" value="back" />
+                    <label for="back" class="btn btn-outline-danger center">Back</label>
+
+                    <input type="radio" id="right" name="transform" value="right" />
+                    <label for="right" class="btn btn-outline-danger center" data-toggle="collapse" role="button"
+                        aria-expanded="false" aria-controls="collapseExample" href="#doggieMatch">Doggie Match</label>
+
+
+                    <input type="radio" id="top3d" name="transform" value="top3d" />
+                    <label for="top3d" class="btn btn-outline-danger center" data-toggle="collapse" role="button"
+                        aria-expanded="false" aria-controls="collapseExample" href="#athletica">Athletica</label>
+            </div>
+
+            <div id="container" class="w-100 center">
+                <figure class="cube">
+                    <div class="front">
+                        <a href="#jitters">
+                            <img src="images/cubeJitters.png" alt="top view of coffee cup with company name"
+                                title="Jitters" style="width:300px;height:300px;" />
+                        </a>
+                    </div>
+                    <div class="left">
+                        <img src="images/cubeMadScience.png"
+                            alt="Boy wearing googles with bright lightbulb glowing on top of metal hat"
+                            title="MadScience" style="width:300px;height:300px;" />
+                    </div>
+                    <div class="right">
+                        <img src="images/cubeDoggieMatch.png" alt="dogs sitting in front of pink wall"
+                            title="Doggie Match" style="width:300px;height:300px;" />
+                    </div>
+                    <div class="top3d">
+                        <img src="images/cubeAthletica.png" alt="fit woman body with company name" title="Athletica"
+                            style="width:300px;height:300px;" />
+                    </div>
+                    <div class="bottom">
+                        <img src="images/comingSoon.png" alt="daisy" title="daisy" style="width:300px;height:300px;">
+                    </div>
+                    <div class="back">
+                        <img src="images/comingSoon.png" alt="daisy" title="daisy" style="width:300px;height:300px;">
+                    </div>
+                </figure>
+            </div>
+        </div>
+        </form>
+    </div>
+
+    <!-- about -->
+    <div id="about" class="container center">
+        <div class="row w-100 mt-0 pb-0">
+            <div class="col-sm-8">
+                <h1 class="titles">about</h1>
+            </div>
+            <div class="col-sm-4">
+                <img src="images/shape.png" alt="pink rectangle" class="mt-5 mr-3 d-none d-sm-block" width="10%"
+                    style="margin: 100% 100% 0;">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="images/bw-profilepic.png" alt="pink rectangle" class="mt-5 pt-5 mx-auto" width="80%"
+                    style="border:1px solid whitesmoke;border-radius: 50%;">
+
+            </div>
+            <div class="col-sm-12 col-md-8 h-100">
+
+                <h6 class="text-reset text-left head-light mt-3 pb-0">MICHELLE M LEFEBVRE</h6>
+                <h1 class="large">Create. Solve. Simplify</h1>
+                <p class="header-light">I’m a creative problem solver with 10+ years of professional design
+                    experience. I have a solid design background in architecture and interior design.
+                    I spent my previous career making buildings, since 2017 I've been building websites. I'm
+                    always thinking about the needs of the client and the user. I can’t help it. I’m great
+                    with
+                    brain-storming and collaborating, I’m flexible, organized and forever curious.</p>
+                <p class="header-light">Some transferable skills are: design, problem solving, continuous
+                    learning, deadline driven, working in teams, fast paced environment, work with minimal
+                    supervision, client and consultant coordination and project management. </p>
+                <p class="header-light">Currently studing Internet Programming and Development at
+                    John Abbott College, while living in Montreal. I am available for full-time work
+                    starting
+                    October 2020. </p>
+
+                <h6 class="">Looking for a full-time permanent position as a Front-End Web Developer</h6>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- resume -->
+    <div id="resume" class="container" style="width: fit-content;">
+        <div class="row w-100 mx-auto text-center mt-0 pb-0 w-100">
+            <div class="col-sm-4 mt-3">
+                <img src="images/shape.png" alt="pink rectangle" class="mt-0 ml-3 head d-none d-sm-block" width="10%"
+                    style="margin: 0 100%;">
+            </div>
+            <div class="col-sm-8 mt-3">
+                <h1 class="titles text-right">resume</h1>
+            </div>
+        </div>
+        <div class="row w-100 mt-0">
+            <div class="col-sm-12 mt-5 ">
+                <p class="lead text-center">
+
+                    <h4 class="text-reset text-center head-light mt-0 pb-0">MICHELLE M LEFEBVRE</h4>
+                    <p class="h4 head-lighter text-center m-4 font-weight-bold">FRONT END DEVELOPER</p>
+                    <h4 class="header-light text-center font-weight-bold">Currently looking for an amazing TEAM to join.</h3>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row w-100 m-auto">
+                <div class="col-sm-12 mt-3 ">
+                    <p class="lead text-center">
+                        <img src="images/call.png" alt="call" width="25" />
+                        <span class="font-weight-bold ml-1 mr-5">514-623-8947</span>
+
+                        <a href="mailto:mmldesigns007@gmail.com">
+                            <img src="images/email.png" alt="email" width="30">
+                        </a>
+                        <span class="font-weight-bold ml-1 mr-5">mmldesigns007@gmail.com </span>
+
+                        <img src="images/location.png" alt="call" width="25" />
+                        <span class="font-weight-bold ml-1">Montreal, QC Canada</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-lg-12 w-100 right">
+                <a href="images/Resume-Lefebvre2020.pdf" class="btn btn-outline-danger">Resume in pdf format</a>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- SKILLS & SUMMARY -->
+        <div class="container center">
+            <div class="row mt-4 m-0 p-0 w-100">
+                <div class="col-sm-12 col-md-12 m-0 
+                p-0 center">
+                    <div class="card center">
+                        <div class="card-body text-left">
+                            <h5 class="card-title text-center font-weight-bold">SKILLS</h5>
+                            <div class="row w-100">
+                                <div class="col-xs-6 col-md-3 mx-0 my-0 p-0">
+                                    <ul>
+                                        <li class="font-weight-bold">Front-End</li>
+                                        <li>HTML5</li>
+                                        <li>CSS3</li>
+                                        <li>Bootstrap</li>
+                                        <li>JavaScript</li>
+                                        <li>JQuery</li>
+                                        <li>React</li>
+                                        <li>XML</li>
+                                        <li>XHTML</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6 col-md-3 mx-0 my-0 p-0">
+                                    <ul>
+                                        <li class="font-weight-bold">Front-End</li>
+                                        <li>Sass</li>
+                                        <li>Gulp</li>
+                                        <li>Grunt</li>
+                                        <li>Wireframe</li>
+                                        <li>Design &amp; Development</li>
+                                        <li>Shopify</li>
+                                        <li>WordPress</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6 col-md-3 mx-0 my-0 p-0">
+                                    <ul>
+                                        <li class="font-weight-bold">Back-End</li>
+                                        <li>C#, WPF, Visual Studio</li>
+                                        <li>Database</li>
+                                        <li>SQL / MySQL</li>
+                                        <li>Java, OOP, Scene</li>
+                                        <li>PHP, Twig, Slim</li>
+                                        <li>ASP.NET Core, Razor</li>
+                                        <li>Entity Framework Core</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6 col-md-3 mx-0 my-0 p-0">
+                                    <ul>
+                                        <li class="font-weight-bold">Tools</li>
+                                        <li>GitHub</li>
+                                        <li>SourceTree</li>
+                                        <li>Visual Studio Code</li>
+                                        <li>Agile, Scrum, Jira</li>
+                                        <li>Terminal</li>
+                                        <li>BitBucket</li>
+                                        <li>Invision</li>
+                                        <li>FileZilla</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- EXPERIENCE -->
+        <div class="container">
+            <div class="row w-100  mt-4">
+                <div class="col-sm-12 m-0 
+                p-0">
+                    <h5 class="orange mt-2 font-weight-bold">EXPERIENCE</h5>
+                </div>
+            </div>
+            <div class="row w-100">
+                <div class="col-sm-12 col-md-6 justify-content-center">
+                    <p class="font-weight-bold mt-3 mb-1">
+                        Owner | MML Designs | Aug 2017 – Present
+                    </p>
+                    <p> Independant consultant as a Front-End Developer. Helping businesses by creating
+                        responsive websites that represent the company's vision and goals. Including client and consultant coordination.
+                    </p>
+                    <p class="font-weight-bold mt-3 mb-1">
+                        <small>MML Designs Client:</small> REFLEKTIONS | June 2018 – Mar 2019
+                    </p>
+                    <p>
+                        Front-End Developer consultant. Provided the user interface solution to the back-end programming team, including the final look, feel and behaviour of the interface in different contexts. Ensure that projects are delivered on-time, within scope. Worked independently and coordinated with team of backend developers using in-house cms.
+                    </p>
+
+                </div>
+                <div class="col-sm-12 col-md-6 ">
+                    <p class="font-weight-bold mt-3 mb-1">
+                        <small>MML Designs Client:</small> REITMANS | Aug 2018 – Sept 2018
+                    </p>
+                    <p>
+                        Front-End Developer consultant. Assisted their team on the personalization
+                        project. For shopper to create profile, select payment methods, preferred store locations
+                        for multiple brands. Completed sprints in a team of seven. Submitting code daily. </p>
+                    <p class="font-weight-bold mt-3 mb-1">
+                        MAC Coordinator | <small>JLL Client:</small> DESJARDINS | Apr 2015 – Sept 2016
+                    </p>
+                    <p>
+                        Coordinate, plan and schedule all moves, additions, relocations, furniture/move
+                        reconfigurations office set ups for client new hires and departures in a 24 hour
+                        process. Maintain central database housing space plans, configurations and furniture
+                        layouts.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- HACKATHON EDUCATION VOLUNTEERING -->
+        <div class="container-fluid content-row">
+            <div class="row w-100 mb-4 center">
+                <div class="col-sm-12 col-md-4 mt-4 m-0 
+                pl-0">
+                    <div class="card h-100">
+                        <div class="card-body text-left">
+                            <h5 class="card-title text-center font-weight-bold">HACKATHON</h5>
+                            <strong class="card-link">Placed 3rd worldwide</strong>
+                            <p class="card-text mt-1">JAMstack Hackathon freeCodeCamp | Remote Team Grilled
+                                Chicken
+                                | 2018</p>
+                            <p class="card-text pb-3">The challenge was to complete a project using JavaScript, APIs
+                                and
+                                Markup in 24hrs. My contribution was the concept, to add dog adoptions by
+                                matching
+                                dogs to people looking for a dog along with the look of the site. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4 mt-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title font-weight-bold">EDUCATION</h5>
+                            <strong class="card-link">Internet Programming &amp; Development AEC</strong>
+                            <p class="card-text">John Abbott College | 2019-2020<br>
+                                Intensive Fulltime Program</p>
+
+                            <strong class="card-link">Responsive Web Design Certification</strong>
+                            <p class="card-text">freeCodeCamp | Sept 2019</p>
+
+                            <strong class="card-link">Lab12</strong>
+                            <p class="card-text">Les Pitonneux | Mar 2017-Jun 2017</p>
+
+                            <strong class="card-link">Secret Security Clearance</strong>
+                            <p class="card-text">Level II 2025</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4 mt-4 mr-0">
+                    <div class="card h-100">
+                        <div class="card-body text-left">
+                            <h5 class="card-title text-center font-weight-bold">VOLUNTEER</h5>
+                            <strong class="card-link text-left">Canada Learning Code</strong>
+                            <p class="card-text text-left">Workshop Mentor | 2018-Present<br>Providing support to
+                                participants as
+                                they learn, explore and get inspired learning.</p>
+
+                            <strong class="card-title text-center text-black">HackerNest</strong>
+                            <strong class="card-link text-left">Canada Learning Code</strong>
+                            <p class="card-text text-left">Volunteer | 2017 - Present
+                                <br>Greeter, check-in / collect attendee donations, setup/cleanup</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- SOCIAL MEDIA ICONS -->
+        <div class="row w-100 mt-5 mb-5">
+            <div class="col-sm-6 col-md-4 mt-3">
+                <a href="https://twitter.com/MMLdesigns">
+                    <img src="images/twitter.png" alt="twitter" width="38" class="mx-auto d-block social" title="Twitter"/>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4 mt-3">
+                <a href="https://www.linkedin.com/in/michellelefebvre1/">
+                    <img src="images/linkedIn.png" alt="linkedin" width="38" class="mx-auto d-block social" title="LinkedIn"/>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4 mt-3">
+                <a href="https://github.com/Michelle-Lefebvre">
+                    <img src="images/github.png" alt="github icon" width="38" class="mx-auto d-block social" title="GitHub"/>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact" class="container mt-0">
+        <div class=" mt-0 pb-0"></div>
+        <div class="row w-100 mt-0">
+            <div class="col-sm-12 col-md-6">
+                <h1 class="titles">contact</h1>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <img src="images/shape.png" alt="pink rectangle" class="mt-5 mb-5 mr-3 head d-none d-sm-block" width="5%" style="margin: 100% 100% 0;">
+            </div>
+        </div>
+        <div class="row pb-5">
+            <div class="col-sm-12 col-md-6">
+                <h6 class="text-reset text-left head-light mt-3 pb-0">CONTACT</h6>
+                <h1 class="large">Get in touch</h1>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <p class="lead text-left mt-5 pt-3">
+                    <img src="images/call.png" alt="call" width="25" />
+                    <span class="font-weight-bold ml-4">514-623-8947</span>
+                    <br>
+
+                    <a href="mailto:mmldesigns007@gmail.com">
+                        <img src="images/email.png" alt="email" width="30">
+                    </a>
+                    <span class="font-weight-bold ml-3">mmldesigns007@gmail.com</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="main.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

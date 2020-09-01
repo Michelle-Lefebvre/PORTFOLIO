@@ -1,158 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MML Projects</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="icon" href="images/MMLlogo.png" type="image/x-icon">
+    <title>MML</title>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+    <!-- CSS -->  
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="cubeStyles.css">
 </head>
 
 <body>
-    <nav class="navbar bg-transparent navbar-light fixed-top" id="myTopnav">
-        <!-- Brand -->
-        <a class="navbar-brand mt-2 ml-3" href="index.html">
-            <img src="images/MMLlogo.png" alt="MML logo" width="50">
-            <img src="images/navTitle.png" alt="MICHELLE M LEFEBVRE Front End Developer" width="150">
-        </a>
+    <header>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse bg-dark navbar-dark" id="collapsibleNavbar">
-            <!-- Links -->
-            <ul class="navbar-nav ">
-                <li class="nav-item mx-auto">
-                    <a class="nav-link" href="index.html#portfolio">Portfolio</a>
-                </li>
-                <li class="nav-item mx-auto">
-                    <a class="nav-link" href="index.html#about">About</a>
-                </li>
-                <li class="nav-item mx-auto">
-                    <a class="nav-link" href="index.html#resume">Resume</a>
-                </li>
-                <li class="nav-item mx-auto">
-                    <a class="nav-link" href="index.html#contact">Contact</a>
-                </li>
-                <!-- Dropdown -->
-                <li class="nav-item dropdown bg-dark navbar-light mx-auto">
-                    <a class="nav-link dropdown-toggle " href="index.html#contact" id="navbardrop"
-                        data-toggle="dropdown">
-                        Social Media
-                    </a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="https://www.linkedin.com/in/michellelefebvre1/"
-                            target="_blank">LinkedIn</a>
-                        <a class="dropdown-item" href="https://github.com/Michelle-Lefebvre" target="_blank">Github</a>
-                        <a class="dropdown-item" href="https://www.freecodecamp.org/michelle-lefebvre"
-                            target="_blank">FreeCodeCamp</a>
-                        <a class="dropdown-item" href="https://codepen.io/MichelleL/" target="_blank">CodePen</a>
-                        <a class="dropdown-item" href="https://twitter.com/MMLdesigns" target="_blank">Twitter</a>
-                        <a class="dropdown-item" href="https://www.instagram.com/mml_design/"
-                            target="_blank">Instagram</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container-fluid">
+        <!-- navbar -->
+        <nav class="fixed-top">
+            <a class="navbar-brand mt-2 ml-3" href="#top">
+                <img src="images/MMLlogo.png" alt="MML logo" width="50">
+                <img src="images/navTitle.png" alt="MICHELLE M LEFEBVRE Front End Developer" width="150">
+            </a>
+            <div id="menu-bar">
+                <div id="menu" onclick="onClickMenu()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+                <ul class="nav" id="nav">
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="menu-bg" id="menu-bg"></div>
+        </nav>
+    </header>
+    <section id="top">
+        <div class="container center">
+            <div class="row w-100 mt-0 pb-0">
+                <div class="col-sm-8">
+                    <h1 class="titles ml-3 w-100">projects</h1>
+                    <h1 class="large ml-3">Select a project and click image</h1>
 
-        <div id="top" class="container mt-0">
-            <div class="mt-0 pb-0">
-                <div class="row mt-0">
-                    <div class="col-6 align-baseline">
-                        <img src="images/bgBuild.png" alt="build" class="mt-5 mr-3 head w-100">
-                        <h6 class="text-reset text-left head-light mt-3 pb-0">MAD SCIENCE</h6>
-                        <h1 class="large">Netherland</h1>
-                        <p class="header-light">This bilingual (dutch &amp; english) website. Starting with three pages
-                            designed I was responsible for building the ten page website ensuring that the site was
-                            cohesive in it's design. I completed all the front end work while coordinating with the
-                            backend developer.</p>
-                        <img src="images/shape.png" alt="pink rectangle" class="mt-5 mr-3 head" width="5%">
-                    </div>
-                    <div class="col-6 mt-5 align-baseline flex-end">
-                        <img src="images/shape.png" alt="pink rectangle" class="mt-5 mr-3 head" width="5%"
-                            style="margin: 100% 100% 0;">
-                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <img src="images/shape.png" alt="pink rectangle" class="mt-5 mr-3 d-none d-sm-block" width="10%"
+                        style="margin: 100% 100% 0;">
                 </div>
             </div>
         </div>
+    </section>
+
+    <div id="portfolio" class="container center">
+        <div class="row w-100 mt-0 pb-0">
+            <div class="col-sm-12 col-md-6">
+                <header class="site-header">
 
 
+                    <!-- Cube of Portfolio-->
+                    <form id="animated-3d" class="animated-3d w-100 center text-center ml-3" action="#">
+                        <!-- Jitters -->
+                        <label for="front" class="btn btn-outline-danger center">Jitters</label>
+                        <input type="radio" id="front" name="transform" value="front" />
 
-        <div class="container mt-0">
-            <div class="row mt-5 pb-0">
-                <div class="col-sm-12">
-                    <img src="images/Collage_MadScience.jpg" alt="Mad Science" title="Mad Science Netherland website"
-                        class="mt-5 mb-5 w-100 m-auto">
-                    <h6 class="text-reset text-left head-light mt-5 mb-5">Desktop &amp; Mobile Responsive</h6>
-                </div>
+                        <!-- MadScience -->
+                        <label for="left" class="btn btn-outline-danger center">Mad Science</label>
+                        <input type="radio" id="left" name="transform" value="left" />
+
+                        <!-- Doggie Match -->
+                        <label for="right" class="btn btn-outline-danger center">Doggie Match</label>
+                        <input type="radio" id="right" name="transform" value="right" />
+
+                        <!-- Athletica -->
+                        <label for="top3d" class="btn btn-outline-danger center">Athletica</label>
+                        <input type="radio" id="top3d" name="transform" value="top3d" />
+
+                        <!-- Bottom -->
+                        <label for="bottom" class="btn btn-outline-danger center">GymBoss</label>
+                        <input type="radio" id="bottom" name="transform" value="bottom" />
+
+                        <!-- Back -->
+                        <label id="backInfo" for="back" class="btn btn-outline-danger center">Back</label>
+                        <input type="radio" id="back" name="transform" value="back" />
+
+
+                        <!-- cube images -->
+                        <div id="container" class="w-100 center">
+                            <figure class="cube">
+                                <div class="front">
+                                    <a href="#jitters" class="moreInfo">
+                                        <img src="images/cubeJitters.png" alt="top view of coffee cup with company name"
+                                            title="Jitters" style="width:300px;height:300px;" />
+                                    </a>
+                                </div>
+                                <div class="left">
+                                    <a href="#madScience" class="moreInfo">
+                                        <img src="images/cubeMadScience.png"
+                                            alt="Boy wearing googles with bright lightbulb glowing on top of metal hat"
+                                            title="MadScience" style="width:300px;height:300px;" />
+                                    </a>
+                                </div>
+                                <div class="right">
+                                    <a href="#doggieMatch" class="moreInfo">
+                                        <img src="images/cubeDoggieMatch.png" alt="dogs sitting in front of pink wall"
+                                            title="Doggie Match" style="width:300px;height:300px;" />
+                                    </a>
+                                </div>
+                                <div class="top3d">
+                                    <a href="#athletica" class="moreInfo">
+                                        <img src="images/cubeAthletica.png" alt="fit woman body with company name"
+                                            title="Athletica" style="width:300px;height:300px;" />
+                                    </a>
+                                </div>
+                                <div class="bottom">
+                                    <a href="#gymBoss" class="moreInfo">
+                                        <img src="images/GymBossCover.jpg" alt="black weights against brown wall"
+                                            title="Gym Boss" style="width:300px;height:300px;">
+                                    </a>
+                                </div>
+                                <div class="back">
+                                    <a href="#back" class="moreInfo">
+                                        <img src="images/comingSoon.png" alt="coming soon" title="Coming Soon"
+                                            style="width:300px;height:300px;">
+                                    </a>
+                                </div>
+                            </figure>
+                        </div>
+                    </form>
+                </header>
             </div>
-        </div>
 
 
-        <div class="container mt-0">
-            <div class="row mt-0">
-                <div class="col-10 h-100">
-                    <img src="images/page-msg-work4us.png" alt="Mad Science" title="Mad Science Netherland website"
-                        class="w-100 m-auto"></a>
-                </div>
-                <div class="col-2 h-100">
-                    <img src="images/MadScienceMobileWork4Us.jpg" alt="Mad Science"
-                        title="Mad Science Netherland website" class="w-100"></a>
-                </div>
-            </div>
-        </div>
-
-        <div id="doggie" class="container mt-0">
-                <div class="row mt-0 pb-0">
-                    <div class="col-6 align-baseline">
-                        <img src="images/bgBuild.png" alt="build" class="mt-5 mr-3 head w-100">
-                        <h6 class="text-reset text-left head-light mt-3 pb-0">Hackathon</h6>
-                        <h1 class="large">Doggie Match</h1>
-                        <p class="header-light">Team took 3rd place worldwide.
-                            A two day hackathon the team pulled together to create a site to help people looking for dogs and people who have dogs they need to find homes for to connect with eachother. This incorporated api, JavaScript using React. My contribution was the concept, design and front end.
+            <div id="collapse" class="col-sm-12 col-md-6">
+                <div class="site-content mt-5">
+                    <div id="jitters" class="infoProj jitters mt-5">
+                        <h2 class="large">Jitters</h2>
+                        <p class="header-light text-left">My contributions were: project idea / concept / site design.
+                            All front-end work, main menu, admin menu, all error pages. Backend admin user list, user
+                            add, user delete, register and menu. Database collaborated with Mark in design of db tables
+                            and columns.
                             <br>
-                            Tools: Design, JavaScript, React, html, css</p>
-                        <img src="images/shape.png" alt="pink rectangle" class="mt-5 mr-3 head" width="5%">
+                            <a href="https://jitters.ipd21.com/" class="btn btn-outline-danger mt-3 mb-3 cta">View
+                            </a>
+                            <a href="https://github.com/Michelle-Lefebvre/ProjectJitters"
+                                class="btn btn-outline-danger mt-3 mb-3 cta">Source Code
+                            </a>
+                            <a href="/images/JittersPresentation.pdf"
+                                class="btn btn-outline-danger mt-3 mb-3 cta">Presentation
+                            </a></p>
+                        <p class="head-light">Tools: PHP, Twig, Bootstrap, Slim, CSS, HTML</p>
                     </div>
-                    <div class="col-6 mt-5 align-baseline flex-end">
-                        <img src="images/shape.png" alt="pink rectangle" class="mt-5 mr-3 head" width="5%"
-                            style="margin: 100% 100% 0;">
+                    <div id="madScience" class="infoProj madScience">
+                        <h2 class="large">Mad Science Netherland</h2>
+                        <p class=" header-light text-left">Responsive design and cross-browser
+                            compatability.&nbsp;Client and backend developer coordination.&nbsp;This bilingual (Dutch
+                            and English) site
+                            was created from design mockups. The site was to follow the US franchise in look and feel.
+                            Added lots of
+                            videos, created new Work for Us page, added lots of pop-up videos and forms. Inputed
+                            franchise locations
+                            (javascript driven).<br><br>Continued with client updating US sites and wrote How to
+                            documents to instruct
+                            with the launch of their new cms.<br>
+                            <a href="projectMSG.html#mad" class="btn btn-outline-danger mt-3 mb-3">View</a>
+                            <a href="https://github.com/MadScienceGroup/MSG_National_NL"
+                                class="btn btn-outline-danger mt-3 mb-3">Source Code</a>
+                            <a href="https://madsciencegroup.github.io/MSG_National_NL/public/nl-EN_index.html"
+                                class="btn btn-outline-danger mt-3 mb-3">Staging Site</a></p>
+                                <p class="head-light">Tools: HTML5, Sass, gulp, bootstrap, javascript</p>
                     </div>
-                </div>
-        </div>
-        <div class="container mt-0">
-            <div class="row mt-5 pb-0">
-                <div class="col-sm-12">
-                    <img src="images/Hackathon-DoggieMatch-collage.jpg" alt="Mad Science" title="Mad Science Netherland website"
-                        class="mt-5 mb-5 w-100 m-auto">
+                    <div id="doggieMatch" class="infoProj doggieMatch">
+                        <h2 class="large">Doggie Match</h2>
+                        <p class="header-light text-left">Hackathon: JAMstack freeCodeCamp - remote,
+                            2018<br>Team took 3rd place worldwide.<br>My contribution was the concept and
+                            design.<br><br>Two day
+                            hackathon
+                            the team pulled together to create a site to help people looking for dogs and people who
+                            have dogs they need
+                            to find homes for to connect with eachother. This incorporated api, JavaScript using
+                            React.&nbsp;<br>
+                            <a href="projectMSG.html#doggie" class="btn btn-outline-danger mt-3 mb-3">View</a>
+                            <a href="https://github.com/phdumaresq/grilled-chicken"
+                                class="btn btn-outline-danger mt-3 mb-3">Source Code</a>
+                            <a href="https://youtu.be/IVsGFgJ_g6c" class="btn btn-outline-danger mt-3 mb-3">Video
+                                Presentation</a></p>
+                                <p class="head-light">Tools: Design, JavaScript, React, html, css</p>
+                    </div>
+                    <div id="athletica" class="infoProj athletica">
+                        <h2 class="large">Athletica</h2>
+                        <p class="header-light text-left">Designed a static responsive website
+                            design.<br>Helped this personal trainer launch her career by creating a custom site.<br>
+                            <a href="https://michelle-lefebvre.github.io/Athletica/"
+                                class="btn btn-outline-danger mt-3 mb-3">View Site</a>
+                            <a href="https://github.com/Michelle-Lefebvre/Athletica"
+                                class="btn btn-outline-danger mt-3 mb-3">Source Code</a></p>
+                                <p class="head-light">Tools: Design, HTML5, CSS3 and bootstrap</p>
+                    </div>
+                    <div id="gymBoss" class="infoProj gymBoss">
+                        <h2 class="large">GymBoss</h2>
+                        <p class="header-light text-left">This is GymBoss DIV element.
+                            <br>
+                            <a href="#back" class="btn btn-outline-danger mt-3 mb-3">View
+                            </a></p>
+                            <p class="head-light">Tools: </p>
+                    </div>
+                    <div id="back" class="infoProj back">
+                        <h2 class="large">Back</h2>
+                        <p class="header-light text-left">This is BACK DIV element.
+                            <br>
+                            <a href="#back" class="btn btn-outline-danger mt-3 mb-3">View
+                            </a></p>
+                            <p class="head-light">Tools: <br></p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-    </div>
 
+            <!-- project more info -->
+            <div class="container-fluid">
+                <div class="topbar"></div>
+                <section>
+                    <div id="mad" class="container mt-0">
+                        <div class="mt-0 pb-0">
+                            <div class="row mt-0">
+                                <div class="col-6 align-baseline">
+                                    <h1 class="titles ml-3 w-100">science</h1>
+                                    <h6 class="text-reset text-left head-light mt-3 pb-0">MAD SCIENCE</h6>
+                                    <h1 class="large">Netherland</h1>
+                                    <p class="header-light">This bilingual (dutch &amp; english) website. Starting with
+                                        three pages
+                                        designed I was responsible for building the ten page website ensuring that the
+                                        site was
+                                        cohesive in it's design. I completed all the front end work while coordinating
+                                        with the
+                                        backend developer.</p>
+                                    <img src="images/shape.png" alt="pink rectangle" class="mt-5 mr-3 head" width="5%">
+                                </div>
+                                <div class="col-6 mt-5 align-baseline flex-end">
+                                    <img src="images/shape.png" alt="pink rectangle" class="mt-5 mr-3 head" width="5%"
+                                        style="margin: 100% 100% 0;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="container mt-0">
+                        <div class="row mt-5 pb-0">
+                            <div class="col-sm-12">
+                                <img src="images/Collage_MadScience.jpg" alt="Mad Science"
+                                    title="Mad Science Netherland website" class="mt-5 mb-5 w-100 m-auto">
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="container mt-0">
+                        <div class="row mt-0">
+                            <div class="col-10 h-100">
+                                <h1 class="titles ml-3 w-100">desktop</h1>
+                                <img src="images/page-msg-work4us.png" alt="Mad Science"
+                                    title="Mad Science Netherland website" class="w-100 m-auto"></a>
+                            </div>
+                            <div class="col-2 h-100">
+                                <h1 class="large titleSm ml-0 w-100 ">mobile</h1>
+
+                                <img src="images/MadScienceMobileWork4Us.jpg" alt="Mad Science"
+                                    title="Mad Science Netherland website" class="w-100"></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div id="doggie" class="container mt-0">
+                        <div class="row mt-0 pb-0">
+                            <div class="col-6 align-baseline">
+                                <h1 class="titles ml-3 w-100">hackathon</h1>
+                                <h6 class="text-reset text-left head-light mt-3 pb-0">Hackathon</h6>
+                                <h1 class="large">Doggie Match</h1>
+                                <p class="header-light">Team took 3rd place worldwide.
+                                    A two day hackathon the team pulled together to create a site to help people looking
+                                    for dogs and people who have dogs they need to find homes for to connect with
+                                    eachother. This incorporated api, JavaScript using React. My contribution was the
+                                    concept, design and front end.
+                                    <br>
+                                    Tools: Design, JavaScript, React, html, css</p>
+                                <img src="images/shape.png" alt="pink rectangle" class="mt-5 mr-3 head" width="5%">
+                            </div>
+                            <div class="col-6 mt-5 align-baseline flex-end">
+                                <img src="images/shape.png" alt="pink rectangle" class="mt-5 mr-3 head" width="5%"
+                                    style="margin: 100% 100% 0;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container mt-0">
+                        <div class="row mt-5 pb-0">
+                            <div class="col-sm-12">
+                                <img src="images/Hackathon-DoggieMatch-collage.jpg"
+                                    alt="multiple dogs siting against pink wall" title="Doggie Match"
+                                    class="mt-5 mb-5 w-100 m-auto">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
 
 
 
     <!-- Optional JavaScript -->
+    <!-- JavaScript | jq-->
+<script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"></script> 
+<script>
+jQuery(".infoProj").hide();
+jQuery(function() {
+    jQuery(".moreInfo").on("click", function(){  
+        var activeEl = jQuery(this).attr("href");
+			
+		 if (jQuery(activeEl).is(':visible')) {
+            jQuery(activeEl).slideUp( "fast", function() {});
+			jQuery(".moreInfo").removeClass('active');
+			jQuery("header.site-header").removeClass('fl');
+			jQuery(".site-content").removeClass('nopad');
+        } else {
+			jQuery(".infoProj").hide();
+           	jQuery(activeEl).slideDown( "fast", function() {});
+			jQuery(this).addClass('active');
+			jQuery("header.site-header").addClass('fl');
+			jQuery(".site-content").addClass('nopad');
+        }
+        return false;
+    });
+});
+</script>
+    <script src="main.js"></script>
+    <!-- Optional JavaScript 
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery3.3.1/jquery.min.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="main.js"></script>
+    -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+     
 </body>
 
 </html>
