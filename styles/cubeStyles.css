@@ -1,3 +1,7 @@
+.infoProj {
+	padding:10px;
+    width: 100%;
+}
 form {
     width: 400px;
     margin: 50px auto;
@@ -25,11 +29,6 @@ form {
     height: 300px;
 }
 
-/* img.img3d {
-    width: 300px;
-    height:300px;
-    width: fit-content;
-} */
 .cube div {
     width: 300px;
     height:inherit;
@@ -38,7 +37,6 @@ form {
     position: absolute;
     border: 1px solid white;
     text-align: center;
-    /* padding-top: 110px; */
     font: 3em 'Times New Roman', Times, Serif;
 }
 
@@ -92,8 +90,7 @@ label:hover {
     color: white;
 }
 
-input:checked+label {
-    color: gold;
+input:active {
     font-weight: bold;
 }
 
@@ -120,8 +117,3 @@ input[value="bottom"]:checked~#container .cube {
 input[value="back"]:checked~#container .cube {
     transform: translateZ(-150px) rotateY(180deg);
 }
-/* 
-img {
-    width: 100%;
-    margin: auto;
-} */
