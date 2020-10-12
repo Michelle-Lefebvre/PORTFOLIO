@@ -56,7 +56,7 @@ body{
 	margin: 20px 0 0px 0px;
 	background: radial-gradient(circle,#f7406d, #a91a3e);
 	border-radius: 50%;
-	transition: 0.3s ease-in-out;
+	transition: 0.001s ease-in-out;
 }
 #menu-bar{
 	z-index: 2;	
