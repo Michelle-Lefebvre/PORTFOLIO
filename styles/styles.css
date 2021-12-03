@@ -90,9 +90,9 @@ a {
 }
 
 a:hover {
-    color: rgb(255, 41, 43);
+    color: rgb(179, 32, 34);
     text-decoration: none;
-    transform: scale(0.3rem);
+    font-weight: 700;
 }
 
 #learn img {
