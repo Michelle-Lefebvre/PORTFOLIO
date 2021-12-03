@@ -84,3 +84,21 @@ h5 {
     text-align: center;
     color: rgb(255, 41, 43);
 }
+
+a {
+    color: rgb(255, 41, 43);
+}
+
+a:hover {
+    color: rgb(255, 41, 43);
+    text-decoration: none;
+    transform: scale(0.3rem);
+}
+
+#learn img {
+    width: 80%
+}
+
+#learn ul li {
+    list-style: circle;
+}
