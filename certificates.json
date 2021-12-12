@@ -1,0 +1,149 @@
+{
+    "cert-008": {
+        "img": "https://github.com/Michelle-Lefebvre/PORTFOLIO/blob/master/images/certificate-modernjs.jpg?raw=true",
+        "issued": "12/21",
+        "expire": "no expiration",
+        "title": "Modern JavaScript",
+        "subtitle": "From the beginning",
+        "description": "Learn and build projects with pure JavaScript. Start with the basic fundamentals and work to advanced programming WITHOUT relying on frameworks or libraries at all.",
+        "list": [
+            {
+                "item-1": "Basics & Fundamentals: Data types, let & const variables, functions, conditionals, loops, object literals, arrays, etc",
+                "item-2": "DOM Manipulation: Selectors, traversing the DOM, show/hide, creating & removing elements, event listeners",
+                "item-3": "OOP: ES5 prototypes, inheritance, ES2015 classes & sub-classes, constructors<",
+                "item-4": "Async JS: Ajax & XHR, Fetch API, callbacks, promises, async / await",
+                "item-5": "ES2015+: Arrow functions, template strings, generators, iterators, maps & sets, symbols & more"
+            }
+        ],
+        "link": "https://www.udemy.com/certificate/UC-eee4faca-d203-4d57-84d8-1588bc692791/"
+    },
+    "cert-007": {
+        "img": "https://github.com/Michelle-Lefebvre/PORTFOLIO/blob/master/images/certificate-50in50JS.png?raw=true",
+        "issued": "12/21",
+        "expire": "no expiration",
+        "title": "50 Projects In 50 Days",
+        "subtitle": "- HTML, CSS & JavaScript",
+        "description": "This is a purely project-based course. It is geared toward beginners, but intermediate developers can also enjoy creating new things. This course includes 50 mini projects in HTML, CSS & JavaScript that relate to the DOM (Document Object Model.",
+        "list": [
+            {
+                "item-1": "project based teaching to sharpen HTML, CSS & JavaScript skills",
+                "item-2": "build unique projects in a short timeframe",
+                "item-3": "modern styling with flexbox, CSS animations, custom properties, etc",
+                "item-4": "DOM manipulation, events, array methods, HTTP requests & more",
+                "item-5": ""
+            }
+        ],
+        "link": "https://www.udemy.com/certificate/UC-045aff9c-684d-4a1f-be27-4b6ce69a0a8b/?utm_campaign=email&utm_source=sendgrid.com&utm_medium=email"
+    },
+    "cert-006": {
+        "img": "https://github.com/Michelle-Lefebvre/PORTFOLIO/blob/master/images/Certificate%20Adobe%20XD.png?raw=true",
+        "issued": "10/21",
+        "expire": "no expiration",
+        "title": "Adobe XD",
+        "subtitle": "UI/UX Design, prototype, and handoff from scratch",
+        "description": "Adobe XD is a powerful tool for UI/UX designers giving the power to design and prototype an entire app, all from one program. This course starts off with Adobe XD basics and quickly gets up to speed on designing and prototyping a full fledged app with amazing images, colors, and animations.",
+        "list": [
+            {
+                "item-1": "navigate around the interface and toggle on/off the panels",
+                "item-2": "set up responsive art boards",
+                "item-3": "convert icons and buttons into symbols to reuse across your entire project",
+                "item-4": "prototyple, test, share projects, prototypes, and design assets",
+                "item-5": ""
+            }
+        ],
+        "link": "https://www.udemy.com/certificate/UC-c3ad9fd1-7e2f-4609-bc41-1d4061779b3a/"
+    },
+    "cert-005": {
+        "img": "https://github.com/Michelle-Lefebvre/PORTFOLIO/blob/master/images/Certificate-AngularCLI-Mastering-the-Basics.png?raw=true",
+        "issued": "11/21",
+        "expire": "no expiration",
+        "title": "Angular CLI",
+        "subtitle": "- Mastering the Basics",
+        "description": "This course contains all the fundamentals, simplified and straight forward.",
+        "list": [
+            {
+                "item-1": "Generate Angular applications and the different features in Angular such as components, services etc using the CLI",
+                "item-2": "Build and Serve Angular applications using the CLI",
+                "item-3": "Add external libraries to Angular CLI applications",
+                "item-4": "",
+                "item-5": ""
+            }
+        ],
+        "link": "https://www.udemy.com/certificate/UC-baa2c85b-3c2e-4413-8c2b-d272d7f32c98/"
+    },
+    "cert-004": {
+        "img": "https://github.com/Michelle-Lefebvre/PORTFOLIO/blob/master/images/Jira%20Certificate.png?raw=true",
+        "issued": "10/21",
+        "expire": "no expiration",
+        "title": "Jira for Beginners",
+        "subtitle": "- Detailed Course to Get Started in Jira",
+        "description": "Learn how to manage projects with Jira for agile teams.",
+        "list": [
+            {
+                "item-1": "Basics of Agile Methodology",
+                "item-2": "Navigating Jira’s Interface",
+                "item-3": "Create and customize a Team-Managed Project, Company-Managed Project",
+                "item-4": "Create and manage Scrum Boards and Kanban Boards",
+                "item-5": "Create Issues, Filters, Custom Fields, Dashboards",
+                "item-6": "User Management & Reports and Roadmaps",
+                "item-7": "Understanding Workflows & Schemes"
+            }
+        ],
+        "link": "https://valtech.udemy.com/certificate/UC-ba46cbb2-c7cd-4e6c-9677-d5e889d2f379/"
+    },
+    "cert-003": {
+        "img": "https://github.com/Michelle-Lefebvre/PORTFOLIO/blob/master/images/certificate-security-awareness.png?raw=true",
+        "issued": "09/21",
+        "expire": "09/22",
+        "title": "Security Awareness",
+        "subtitle": "Valtech Training",
+        "description": "Security awareness training is a type of cyber security education that gives an organization’s end users the knowledge they need to protect confidential information from cyber criminals.",
+        "list": [
+            {
+                "item-1": "Importance of Security & What needs protection",
+                "item-2": "Best way to stay safe",
+                "item-3": "Span & Phishing",
+                "item-4": "Spear phishing",
+                "item-5": "Cyber Attack Tactics"
+            }
+        ],
+        "link": ""
+    },
+    "cert-002": {
+        "img": "https://github.com/Michelle-Lefebvre/PORTFOLIO/blob/master/images/certificate-java-1.png?raw=true",
+        "issued": "02/21,",
+        "expire": "no expiration",
+        "title": "Ultimate Java Part 1: Fundamentals",
+        "subtitle": "The Ultimate Java Mastery Series",
+        "description": "The first of three courses in the series.",
+        "list": [
+            {
+                "item-1": "Control Flow",
+                "item-2": "Clean Coding",
+                "item-3": "Debugging and Deploying Applications",
+                "item-4": "",
+                "item-5": ""
+            }
+        ],
+        "link": "https://codewithmosh.com/courses/580597/certificate"
+    },
+    "cert-001": {
+        "img": "https://github.com/Michelle-Lefebvre/PORTFOLIO/blob/master/images/Certification%20fcc%20Responsive%20Web%20Design.png?raw=true",
+        "issued": "09/19",
+        "expire": "no expiration",
+        "title": "Resposive Web Design",
+        "subtitle": "",
+        "description": "Developer Certification, representing approximately 300 hours of coursework. Learn the languages that developers use to build webpages using modern techniques, accessibility, ect. Duration: 300 hours",
+        "list": [
+            {
+                "item-1": "HTML5",
+                "item-2": "CSS3",
+                "item-3": "Flexbox & CSS Grid",
+                "item-4": "",
+                "item-5": ""
+            }
+        ],
+        "link": "https://www.freecodecamp.org/certification/michelle-lefebvre/responsive-web-design"
+    }
+
+}
