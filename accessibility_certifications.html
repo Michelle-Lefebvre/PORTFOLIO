@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: lightgrey;
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .title {
+      margin: 10px 0 0;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 1000px;
+    }
+
+    img {
+      object-fit: cover;
+      margin: 10px;
+      height: auto;
+      width: 300px;
+      max-width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Accessibility Certificates</h1>
+  <div class="container"></div>
+  <script>
+    const container = document.querySelector('.container')
+
+    const URLs = [
+      'https://github.com/Michelle-Lefebvre/PORTFOLIO/blob/master/images/cert-accessibility-web-fundaments.png?raw=true',
+      'https://github.com/Michelle-Lefebvre/PORTFOLIO/blob/master/images/cert-accessibility-with-wcag2_1.png?raw=true',
+      'https://github.com/Michelle-Lefebvre/PORTFOLIO/blob/master/images/cert-accessibility-web-devs-1.png?raw=true',
+      'https://github.com/Michelle-Lefebvre/PORTFOLIO/blob/master/images/cert-accessibility-web-devs-2.png?raw=true',
+      'https://github.com/Michelle-Lefebvre/PORTFOLIO/blob/master/images/cert-accessibility-ios-apps.png?raw=true',
+      'https://github.com/Michelle-Lefebvre/PORTFOLIO/blob/master/images/cert-accessibility-for-pdf.png?raw=true',
+      'https://github.com/Michelle-Lefebvre/PORTFOLIO/blob/master/images/cert-accessibility-testing-web.png?raw=true',
+      'https://github.com/Michelle-Lefebvre/PORTFOLIO/blob/master/images/cert-accessibility-seo.png?raw=true',
+      'https://github.com/Michelle-Lefebvre/PORTFOLIO/blob/master/images/cert-accessibility-web-developers-learning-path.png?raw=true'
+    ];
+
+    const imgs = URLs.map(function (URL) {
+      const img = new Image();
+      img.src = URL;
+      container.appendChild(img);
+      return img;
+    });
+  </script>
+</body>
+
+</html>
