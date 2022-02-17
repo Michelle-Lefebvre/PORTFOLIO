@@ -1,4 +1,20 @@
 {
+    "cert-009": {
+        "img": "https://github.com/Michelle-Lefebvre/PORTFOLIO/blob/master/images/certificate-gitessentials.jpg?raw=true",
+        "issued": "02/22",
+        "expire": "no expiration",
+        "title": "Git Essentials:",
+        "subtitle": "Learn Git with Bitbucket and Sourcetree",
+        "description": "Learn and build projects with pure JavaScript. Start with the basic fundamentals and work to advanced programming WITHOUT relying on frameworks or libraries at all.",
+        "list": [
+            {
+                "item-1": "Integrate Git in their daily projects.",
+                "item-2": "Execute basic commands in the command line.",
+                "item-3": "Be comfortable using Git commands on the companies project(s)."
+            }
+        ],
+        "link": "https://valtech.udemy.com/certificate/UC-8520ec6e-917c-431e-8822-8c28185470ba/"
+    },
     "cert-008": {
         "img": "https://github.com/Michelle-Lefebvre/PORTFOLIO/blob/master/images/certificate-modernjs.jpg?raw=true",
         "issued": "12/21",
