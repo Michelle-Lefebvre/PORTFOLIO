@@ -1,118 +1,147 @@
 .infoProj {
-	padding:10px;
-    width: 100%;
+  padding: 10px;
+  width: 100%;
 }
 form {
-    width: 400px;
-    margin: 50px auto;
+  width: 400px;
+  margin: 50px auto;
 }
 
 /* perspevtive element to do 3D */
 #container {
-    width: 300px;
-    height: 300px;
-    margin: 100px auto;
-    perspective: 1100px;
-    perspective-origin: -50px -50px;
-    float: left;
+  width: 300px;
+  height: 300px;
+  margin: 100px auto;
+  perspective: 1100px;
+  perspective-origin: -50px -50px;
+  float: left;
 }
 
 .cube {
-    transform-style: preserve-3d;
-    position: relative;
-    left: 15%;
-    margin: 0;
-    transition: 1S;
-    transform: translateZ(-150px);
-    width: 300px;
-    height: 300px;
+  transform-style: preserve-3d;
+  position: relative;
+  left: 15%;
+  margin: 0;
+  transition: 1s;
+  transform: translateZ(-150px);
+  width: 300px;
+  height: 300px;
 }
 
 .cube div {
-    width: 300px;
-    height:inherit;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    position: absolute;
-    border: 1px solid white;
-    text-align: center;
-    font: 3em 'Times New Roman', Times, Serif;
+  width: 300px;
+  height: inherit;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  position: absolute;
+  border: 1px solid white;
+  text-align: center;
+  font: 3em "Times New Roman", Times, Serif;
 }
 
 .cube div.front {
-    transform: translateZ(150px);
+  transform: translateZ(150px);
 }
 
 .cube div.left {
-    transform: rotateY(-90deg) translateZ(150px);
-    background-color: rgba(0, 255, 0, 0.6);
+  transform: rotateY(-90deg) translateZ(150px);
+  background-color: rgba(0, 255, 0, 0.6);
 }
 
 .cube div.right {
-    transform: rotateY(90deg) translateZ(150px);
-    background-color: rgba(0, 0, 255, 0.6);
+  transform: rotateY(90deg) translateZ(150px);
+  background-color: rgba(0, 0, 255, 0.6);
 }
 
 .cube div.top3d {
-    transform: rotateX(90deg) translateX(0px) translateZ(150px);    
-    background-color: rgba(255, 255, 0, 0.6);
+  transform: rotateX(90deg) translateX(0px) translateZ(150px);
+  background-color: rgba(255, 255, 0, 0.6);
 }
 
 .cube div.bottom {
-    transform: rotateX(-90deg) translateZ(150px);
-    background-color: rgba(0, 255, 255, 0.6);
+  transform: rotateX(-90deg) translateZ(150px);
+  background-color: rgba(0, 255, 255, 0.6);
 }
 
 .cube div.back {
-    transform: rotateY(180deg) translateZ(150px);
-    background-color: rgba(0, 0, 0, 0.6);
+  transform: rotateY(180deg) translateZ(150px);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* styling for labels */
 label {
-    cursor: pointer;
-    background-color: gray;
-    margin-left: 5px;
-    border-radius: 10px;
-    padding: 10px;
-    float: left;
-    text-align: center;
+  cursor: pointer;
+  background-color: gray;
+  margin-left: 5px;
+  border-radius: 10px;
+  padding: 10px;
+  float: left;
+  text-align: center;
 }
 
 input[type="radio"] {
-    position: absolute;
-    left: -9999px;
+  position: absolute;
+  left: -9999px;
 }
 
 label:hover {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
 input:active {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 input[value="front"]:checked {
-    transform: translateZ(-150px) rotateY(0);
+  transform: translateZ(-150px) rotateY(0);
 }
 
-input[value="left"]:checked~#container .cube {
-    transform: translateZ(-150px) rotateY(90deg);
+input[value="left"]:checked ~ #container .cube {
+  transform: translateZ(-150px) rotateY(90deg);
 }
 
-input[value="right"]:checked~#container .cube {
-    transform: translateZ(-150px) rotateY(-90deg);
+input[value="right"]:checked ~ #container .cube {
+  transform: translateZ(-150px) rotateY(-90deg);
 }
 
-input[value="top3d"]:checked~#container .cube {
-    transform: translateZ(-150px) rotateX(-90deg);
+input[value="top3d"]:checked ~ #container .cube {
+  transform: translateZ(-150px) rotateX(-90deg);
 }
 
-input[value="bottom"]:checked~#container .cube {
-    transform: translateZ(-150px) rotateX(90deg);
+input[value="bottom"]:checked ~ #container .cube {
+  transform: translateZ(-150px) rotateX(90deg);
 }
 
-input[value="back"]:checked~#container .cube {
-    transform: translateZ(-150px) rotateY(180deg);
+input[value="back"]:checked ~ #container .cube {
+  transform: translateZ(-150px) rotateY(180deg);
+}
+/* carousel */
+.parent {
+  position: relative;
+  width: 500px;
+  height: 400px;
+  border: 1px solid;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  perspective: 2000px;
+  transform-style: preserve-3d;
+}
+
+.item {
+  transition: all 0.5s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 250px;
+  background: green;
+  border-radius: 20px;
+  box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.5);
+  transform: translateX(-50%) translateY(-50%);
 }
